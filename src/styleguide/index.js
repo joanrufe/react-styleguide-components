@@ -1,30 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {TextInput} from "../common-ux/"
+import Header from './header'
+import Router from './router'
+import { BrowserRouter} from "react-router-dom";
 
-class App extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            value: ''
-        }
-        this.textChanged = this.textChanged.bind(this)
-    }
+const Styleguide = () => (
+    <div>
+        <Header />
+        <Router />
+    </div>
+)
 
-    textChanged (e) {
-        this.setState({
-            value: e.target.value
-        })
-    }
-    
-    render () {
-        return (
-            <div>
-                <h1>My styleguide</h1>
-                <TextInput label="Name" value={this.state.value} onChange={this.textChanged} />
-            </div>
-        )
-    }
-}
-
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(
+    <BrowserRouter>
+        <Styleguide />
+    </BrowserRouter>
+    , document.getElementById("root")
+)
