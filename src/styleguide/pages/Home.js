@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => (
   <div>
-    <h1>My cool react component library!</h1>
+    <h1>React Styleguide Components</h1>
   </div>
 )
 

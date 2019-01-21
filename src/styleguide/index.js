@@ -5,7 +5,7 @@ import Router from './router'
 import { BrowserRouter} from "react-router-dom";
 
 const Styleguide = () => (
-    <div>
+    <div className="styleguide">
         <Header />
         <Router />
     </div>
@@ -17,3 +17,5 @@ ReactDOM.render(
     </BrowserRouter>
     , document.getElementById("root")
 )
+
+module.hot.accept(Styleguide)

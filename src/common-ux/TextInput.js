@@ -1,7 +1,7 @@
 import React from "react";
 import "./TextInput.scss";
 
-const TextInput = ({ label, value, onChange }) => (
+const TextInput = ({ label, value, onChange, disabled }) => (
   <div className="form-group">
     {label && (
       <label className="text-label">
@@ -13,6 +13,7 @@ const TextInput = ({ label, value, onChange }) => (
       className="text-input"
       value={value}
       onChange={onChange}
+      disabled={disabled || false}
     />
   </div>
 );

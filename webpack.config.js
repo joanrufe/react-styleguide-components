@@ -63,6 +63,13 @@ module.exports = function (env) {
 					use: {
 						loader: 'babel-loader'
 					}
+				},
+				{
+					test: /\.md$/,
+					loaders: [
+						'json-loader',
+						'front-matter-loader'
+					]
 				}
 			]
 		},
