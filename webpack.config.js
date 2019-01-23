@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 const webpack = require('webpack');
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = function (env) {
 	const styleguide = {
@@ -17,6 +16,7 @@ module.exports = function (env) {
 		// Development settings
 		devServer: !env.production? {
 			hot: true,
+			open: true,
 			contentBase: path.resolve(__dirname, 'public/'),
 			publicPath: '/'
 		}: {},

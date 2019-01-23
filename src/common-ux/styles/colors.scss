@@ -1,0 +1,26 @@
+$tui-white: #fff;
+$tui-red: #d40e14;
+$tui-darkblue: #092a5e;
+$tui-blue: #70cbf4;
+$tui-blue-50: #c2e6fa;
+$tui-blue-25: #e2f3fe;
+// Secondary
+$tui-digital-gray: #4c4c4c;
+$tui-digital-blue: #2fb1fb;
+// Achromatic Gray
+$tui-gray-50: #b9b9b9;
+$tui-gray-25: #dcdcdc;
+// Achromatic Beige
+$tui-beige: #d7d2c3;
+$tui-beige-50: #e7e3db;
+$tui-beige-25: #f3f0ec;
+$tui-beige-12: #f8f7f3;
+// Form Message
+$tui-green: #aad700;
+$tui-light-green: #eaf5bf;
+$tui-yellow: #fff100;
+$tui-light-yellow: #fff7bf;
+
+:export {
+    tuiRed: $tui-red;
+}

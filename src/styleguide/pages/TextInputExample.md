@@ -1,6 +1,7 @@
 ---
 title: Text Input
 component: TextInput
+category: molecules
 ---
 Usage: 
 ```js

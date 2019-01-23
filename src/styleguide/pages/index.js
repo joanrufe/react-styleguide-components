@@ -1,7 +1,9 @@
-import TextInputExample from './TextInputExample'
 import Home from './Home'
+import TextInputExample from './TextInputExample'
+import ButtonExample from './ButtonExample'
 
 export default {
     Home,
-    TextInputExample
+    TextInputExample,
+    ButtonExample
 }

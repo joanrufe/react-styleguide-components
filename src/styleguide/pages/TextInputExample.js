@@ -1,5 +1,5 @@
 import React from 'react'
-import {TextInput} from '../../common-ux/'
+import {TextInput} from '../../common-ux/molecules'
 
 class TextInputExample extends React.Component {
   constructor() {
